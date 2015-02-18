@@ -60,11 +60,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\EiT1\EiT1\main.c" />
-    <ClCompile Include="..\..\EiT1\EiT1\WriteToFile.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="WriteToFile.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\EiT1\EiT1\WriteToFile.h" />
+    <ClInclude Include="WriteToFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
