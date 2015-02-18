@@ -13,7 +13,7 @@ void writeToFile(const char *filepath, const char *data){
 	fclose(fp);
 }
 
-
+// Alternative, more complicated and messy
 /*int writeToFile1(string myfile, string mytext)
 {
    char c[1000];

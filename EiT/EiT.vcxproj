@@ -60,10 +60,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CSVConverter.c" />
+    <ClCompile Include="i2c.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="WriteToFile.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CSVConverter.h" />
+    <ClInclude Include="i2c.h" />
     <ClInclude Include="WriteToFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
