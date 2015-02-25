@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "Logger.h"
+#include "WriteToFile.h"
 
 void csv_converter(long int id, float values[], int size) {
 	int i=0;
@@ -10,6 +12,22 @@ void csv_converter(long int id, float values[], int size) {
 	printf("%.2f\n", values[size-1]);
 }
 
+/*
+	Takes an id and a float array of sensor data and converts it  to CSV format
+	long int id: samplenumber
+	float values[]: sensor data - format {sensor1_id, sensor1_status, sensor1_value, sensor2_id, sensor2_status, sensor2_value,...}
+*/
+void convertToCSV(long int id, float values[]) {
+	int i;
+	float csv_list[NUMBER_OF_SENSORS * 3 + 1];
+
+	csv_list[0] = id;
+	for(i = 1; i < NUMBER_OF_SENSORS * 3 + 1; i++) {
+		csv_list[i] = values[i - 1];
+	}
+	// Calls a function that writes csv_list to file
+	writeFloatToFile(LOG_PATH, csv_list);
+}
 
 /*int main(void) {
 	int size = 3;

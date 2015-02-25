@@ -1,15 +1,24 @@
-﻿Build started 18.02.2015 13:36:26.
+﻿Build started 25.02.2015 14:02:15.
      1>Project "C:\Users\Tore\documents\visual studio 2010\Projects\EiT\EiT\EiT.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\EiT.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt Sensors.c
-         Sensors.c
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt CSVConverter.c WriteToFile.c
+         WriteToFile.c
+     1>c:\users\tore\documents\visual studio 2010\projects\eit\eit\writetofile.c(6): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\tore\documents\visual studio 2010\projects\eit\eit\writetofile.c(18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         CSVConverter.c
+     1>c:\users\tore\documents\visual studio 2010\projects\eit\eit\csvconverter.c(19): warning C4244: '=' : conversion from 'long' to 'float', possible loss of data
+         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tore\documents\visual studio 2010\Projects\EiT\Debug\EiT.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\EiT.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Tore\documents\visual studio 2010\Projects\EiT\Debug\EiT.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tore\documents\visual studio 2010\Projects\EiT\Debug\EiT.lib" /MACHINE:X86 Debug\CSVConverter.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tore\documents\visual studio 2010\Projects\EiT\Debug\EiT.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\EiT.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Tore\documents\visual studio 2010\Projects\EiT\Debug\EiT.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tore\documents\visual studio 2010\Projects\EiT\Debug\EiT.lib" /MACHINE:X86 Debug\CSVConverter.obj
          Debug\i2c.obj
+         Debug\Logger.obj
          Debug\main.obj
          Debug\Sensors.obj
+         Debug\StatusUpdate.obj
          Debug\WriteToFile.obj
          LINK : C:\Users\Tore\documents\visual studio 2010\Projects\EiT\Debug\EiT.exe not found or not built by the last incremental link; performing full link
          EiT.vcxproj -> C:\Users\Tore\documents\visual studio 2010\Projects\EiT\Debug\EiT.exe
@@ -22,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.42
+Time Elapsed 00:00:00.43
